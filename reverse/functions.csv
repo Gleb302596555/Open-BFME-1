@@ -9508,7 +9508,6 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?doSetRallyPoint@@YAXPAVObject@@ABUCoord3D@@@Z,,0x00396D40,880,Code/masm_dumps/doSetRallyPoint.asm,matched,Exact 880B @ 0x396D40; string-anchored RallyPoint; Ghidra ENTRY Open-BFME4
 ?doSkirmishCommandButtonOnMostValuable@ScriptActions@@IAEXABVAsciiString@@0M_N@Z,,0x002FF770,795,Code/masm_dumps/ScriptActions_doSkirmishCommandButtonOnMostValuable_2FF770.asm,matched,Certified packet 206; Ghidra entry and matched executeAction slot 0x106 caller via ILT thunk; ret 0x10 padding boundary; retail SHA256 4c987ad80b49206403057827e52ac75e8e02d64d6a8a8440c721f0df7d6f213b
 ?doSkyBox@ScriptActions@@IAEX_N@Z,,0x002EF640,32,Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp,matched,
-?doSkyBoxSet@@YAX_N@Z,,0x00029AC8,5,Code/masm_dumps/_doSkyBoxSet__YAX_N_Z_29AC8.asm,matched,MASM exact retail dump
 ?doSoundOverrideVolume@ScriptActions@@IAEXABVAsciiString@@M@Z,,0x002EFEB0,38,Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp,matched,Audio vtable+0xa0 volume override fmul 0.01
 ?doSoundPlayFromNamed@ScriptActions@@IAEXABVAsciiString@@0@Z,,0x002EE880,165,Code/masm_dumps/ScriptActions_doSoundPlayFromNamed.asm,matched,Exact retail MASM; registered action and executeAction dispatch prove ownership
 ?doSoundRemoveAllDisabled@ScriptActions@@IAEXXZ,,0x002EFE60,17,Code/GameEngine/Source/GameLogic/ScriptEngine/ScriptActions.cpp,matched,Audio vtable+0x9c removeDisabledEvents(0)
@@ -13404,7 +13403,6 @@ name,export_rva,target_rva,target_size,source,status,notes
 ?writeByte@DataChunkOutput@@QAEXD@Z,,0x00102580,25,Code/GameEngine/Source/Common/System/DataChunk.cpp,matched,
 ?writeCacheINI@MapCache@@AAEX_N@Z,,0x0000E2B4,5,Code/masm_dumps/_writeCacheINI_MapCache__AAEX_N_Z_E2B4.asm,matched,MASM exact retail dump
 ?writeDict@DataChunkOutput@@QAEXABVDict@@@Z,,0x001043B0,572,Code/GameEngine/Source/Common/System/DataChunk_writeDict.asm,matched,exact 572B MASM; true body 0x1043B0 (queue 0x1043FB INSIDE after fwrite); 5-case Dict switch jumptable; sibling writeNameKey pattern
-?writeFirewallBehavior@FirewallHelperClass@@QAEXXZ,,0x0066FDF0,380,Code/masm_dumps/writeFirewallBehavior_FirewallHelperClass_QAEXXZ_0066FDF0_packet309.asm,matched,Certified packet 309 exact retail byte recovery sha256 adb48b97c58656160c2717d8af30a1bc43cf024ba94f2a11472e29a8b8857d7c
 ?writeGameMessageArgumentToPacket@NetPacket@@IAEXW4GameMessageArgumentDataType@@TGameMessageArgumentType@@@Z,,0x00678430,26,Code/GameEngine/Source/GameNetwork/NetPacket.cpp,matched,
 ?writeINI@?$DefaultModuleTemplate@$00@FXParticleSystem@@UBEXAAVFile@@I@Z,0x0002E492,0x005EEF50,536,Code/masm_dumps/__writeINI___DefaultModuleTemplate__00_FXParticleSy_5EEF50.asm,matched,
 ?writeINI@?$DefaultModuleTemplate@$01@FXParticleSystem@@UBEXAAVFile@@I@Z,0x0001CE6D,0x006000B0,807,Code/masm_dumps/__writeINI___DefaultModuleTemplate__01_FXParticleSy_6000B0.asm,matched,
@@ -13594,3 +13592,5 @@ _tanf,,0x00873930,9,Code/GameEngineDevice/Source/W3DDevice/GameClient/Shadow/W3D
 ??0LockWeaponCreateModuleData@@QAE@XZ,,0x0024FE00,16,Code/GameEngine/Source/GameLogic/Object/Create/LockWeaponCreate.cpp,matched,thunk-dump converted to real C++ (ZH body verbatim); BFME Snapshot ctor is inline-empty so no base-ctor call is emitted
 ??0DockUpdateModuleData@@QAE@XZ,,0x002CAAF0,20,Code/GameEngine/Source/GameLogic/Object/Update/DockUpdate/DockUpdate.cpp,matched,thunk-dump converted to real C++; BFME Snapshot ctor is inline-empty (reference/shims/snapshotinline) so no base-ctor call is emitted
 ??0BeaconClientUpdateModuleData@@QAE@XZ,,0x006031C0,23,Code/GameEngine/Source/GameClient/Drawable/Update/BeaconClientUpdate.cpp,matched,thunk-dump converted to real C++ (ZH body verbatim); BFME Snapshot ctor is inline-empty so no base-ctor call is emitted
+?writeFirewallBehavior@FirewallHelperClass@@QAEXXZ,,0x0066FDF0,380,Code/GameEngine/Source/GameNetwork/FirewallHelper.cpp,matched,MASM dump converted to clean C++; needs BFME GlobalData layout (reference/shims/globaldata) where m_firewallBehavior is at +0xB14
+?doSkyBoxSet@@YAX_N@Z,,0x0079E490,29,Code/GameEngineDevice/Source/W3DDevice/GameClient/Water/W3DWater.cpp,matched,thunk-dump converted to clean C++; BFME GlobalData puts m_drawSkyBox at +0x180 (reference/shims/globaldata)
